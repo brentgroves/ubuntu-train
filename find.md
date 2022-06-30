@@ -1,0 +1,1 @@
+find /home/mis1/anaconda3/ -name *.png
