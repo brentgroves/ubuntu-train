@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Jupyter Lab
+Comment=Start Jupyter Lab server
+Comment[ru_RU]=Запуск сервера Jupyter Lab
+Exec=gnome-terminal --tab -- /bin/bash -c "~/anaconda3/bin/jupyter-lab;bash"
+Icon=jupyter-lab
+Type=Application
+StartupNotify=true
+StartupWMClass=jupyter-lab
+Actions=open-browser
+
+[Desktop Action open-browser]
+Name=Open in browser
+Name[ru_RU]=Открыть в браузере
+Exec=xdg-open http://localhost:8888/lab

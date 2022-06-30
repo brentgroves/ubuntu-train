@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Jupyter Lab
+Comment=Start Jupyter Lab server
+Exec=gnome-terminal --tab -- /bin/bash -c '/home/mis1/anaconda3/bin/jupyterlab.sh;bash'
+Icon=/home/mis1/anaconda3/lib/python3.9/site-packages/anaconda_navigator/static/images/jupyterlab-icon-1024x1024.png
+Type=Application
+StartupNotify=true
+StartupWMClass=jupyter-lab
+Actions=open-browser
+
+[Desktop Action open-browser]
+Name=Open in browser
+Exec=xdg-open http://localhost:8888/lab

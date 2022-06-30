@@ -1,5 +1,37 @@
 https://dannyda.com/2020/08/16/how-to-create-shortcut-icon-for-jupyter-jupyterlab-jupyter-notebook-in-linux-debian-ubuntu-kali-linux-how-to-create-desktop-shortcuts-in-linux/
 
+[Desktop Entry]
+Name=Jupyter Lab
+Comment=Start Jupyter Lab server
+Exec=gnome-terminal --tab -- /bin/bash -c '/home/mis1/anaconda3/bin/jupyterlab;bash'
+Icon=/home/mis1/anaconda3/lib/python3.9/site-packages/anaconda_navigator/static/images/jupyterlab-icon-1024x1024.png
+Type=Application
+StartupNotify=true
+StartupWMClass=jupyter-lab
+Actions=open-browser
+
+[Desktop Action open-browser]
+Name=Open in browser
+Exec=xdg-open http://localhost:8888/lab
+
+I believe the Gnome Terminal runs bash (the GNU Bourne Again SHell) by default.
+
+Actually it probably runs whatever shell is specified for your account in /etc/passwd
+
+On startup bash goes through ~/.profile and ~/.bash_profile, that's why those variables get set.
+
+So to recap: when you start Gnome Terminal, it starts your shell, and your shell goes through these scripts setting the environment variables.
+Icon=/home/mis1/anaconda3/lib/python3.9/site-packages/anaconda_navigator/app/icons/Icon1024.png
+
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=notebooks
+Exec=gnome-terminal -x sh -c '/home/mis1/anaconda3/bin/notebooks'
+Icon=/home/mis1/anaconda3/notebooks.jpg
+Categories=Development;
+Terminal=False
+StartupNotify=True
 
 #!/usr/bin/env xdg-open
 [Desktop Entry]

@@ -1,0 +1,1 @@
+jupyter lab --app_dir= /home/mis1/src/jupyter-notebooks --preferred_dir /home/mis1/src/jupyter-notebooks

@@ -1,0 +1,6 @@
+#!/bin/bash
+export PATH=/home/mis1/anaconda3/bin:/home/mis1/anaconda3/condabin:/sbin:/bin:/usr/bin:/usr/local/bin:/snap/bin
+export LD_LIBRARY_PATH=/usr/oaodbc81/lib64
+export OASDK_ODBC_HOME=/usr/oaodbc81/lib64 
+export ODBCINI=/usr/oaodbc81/odbc64.ini 
+jupyter lab --app_dir= /home/mis1/src/jupyter-notebooks --preferred_dir /home/mis1/src/jupyter-notebooks
