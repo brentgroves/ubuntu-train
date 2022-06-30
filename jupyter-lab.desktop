@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Jupyter Lab
 Comment=Start Jupyter Lab server
-Exec=gnome-terminal --tab -- /bin/bash -c '/home/mis1/anaconda3/bin/jupyterlab.sh;bash'
+Exec=gnome-terminal --tab -- /bin/bash -c '/home/mis1/anaconda3/bin/jupyterlab.sh'
 Icon=/home/mis1/anaconda3/lib/python3.9/site-packages/anaconda_navigator/static/images/jupyterlab-icon-1024x1024.png
 Type=Application
 StartupNotify=true
